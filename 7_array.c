@@ -42,7 +42,7 @@ int main(void) {
     // 특정한 문자열에 접근하는 방법
     char b[20] = "Hello World";
     b[4] = ', ';
-    printf("%s\n", b);
+    printf("%s\n", b); 
 
     system("read");
     return 0;
