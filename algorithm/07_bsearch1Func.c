@@ -34,7 +34,7 @@ int main(void) {
   }
   printf("검색값 : ");
   scanf("%d", &ky);
-  p = bsearch2(&ky,
+  p = bsearch(&ky,
               x,
               nx,
               sizeof(int),
