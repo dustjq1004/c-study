@@ -10,7 +10,7 @@ int main(void) {
 
   while(1) {
     int menu, x;
-    printf("현재 데이터 수 : %d /%d ]\n", size(&s), capacity(&s));
+    printf("현재 데이터 수 : %d / %d \n", size(&s), capacity(&s));
     printf("(1)푸시 (2)팝 (3)피크 (4)출력 (0)종료 : ");
     scanf("%d", &menu);
 
@@ -27,13 +27,13 @@ int main(void) {
       if(pop(&s, &x) == -1)
         puts("\a오류 : 팝에 실패하였습니다.");
       else 
-        printf("팝 데이터는 %d입니다.", x);
+        printf("팝 데이터는 %d입니다.\n", x);
       break;
     case 3:
       if(peek(&s, &x) == -1)
         puts("\a오류 : 피크에 실패했습니다");
       else
-        printf("피크 데이터는 %d입니다.", x);
+        printf("피크 데이터는 %d입니다.\n", x);
       break;
     case 4:
       print(&s);
